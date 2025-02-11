@@ -1,11 +1,11 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-header{
+header {
     background-color: rgb(124, 0, 104);
     display: flex;
     height: 20vh;
@@ -18,17 +18,17 @@ strong {
     font-size: 23px;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     font-size: 20px;
 }
 
-nav li{
+nav li {
     display: inline-block;
     margin-right: 40px;
 }
 
-nav a{
+nav a {
     color: rgb(240, 232, 232);
     text-decoration: none;
 }
@@ -36,54 +36,199 @@ nav a{
 
 /*logo do viva açai*/
 .logo {
+    margin-left: 10px;
     height: 100px;
     border-radius: 10px 10px 10px 10px;
 }
 
 /*titulo do viva açai*/
 .titulo {
-    flex-grow: 1; /* Faz o título ocupar o espaço restante */
+    margin-left: 15px;
+    flex-grow: 1;
+    /* Faz o título ocupar o espaço restante */
     color: rgb(240, 232, 232);
+
 }
 
-.reservas{
+.titulo2 {
     text-align: center;
-    color: rgb(0, 0, 0);    
+}
+
+p {
+    font-size: 25px;
+    padding: 10px;
+    margin: 0;
+}
+
+
+.local {
+    display: flex;
+}
+
+.reservas {
+    text-align: center;
+    color: rgb(0, 0, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.combos{
+.combos {
     text-align: center;
-    color: #A02B93;    
-    font-family: Verdana, Geneva, Tahoma, sans-serif #A02B93;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif #000000;
 }
 
+.info {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
 
-
-.imagem2{
+.imagem2 {
     background-image: url("..//imagens/imagens2");
     width: 900px;
     height: 650px;
     display: block;
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
     background-size: cover;
 }
 
-.imagem2 img{
+.imagem2 img {
     width: 180%;
 }
 
-/*formulário da reserva*/
-.reservas3 {
-    display: flex; 
-    justify-content: center;
-    color: rgb(0, 0, 0);
-    font-family: 'Times New Roman', Times, serif;  
-    font-size: 18px;  
+.titulo3{
+    text-align: center;
 }
 
-section{
-    background-color: rgba(18, 146, 18, 0.352);
+.titulo4{
+    text-align: center;
+}
+
+
+
+
+
+/*CARDÁPIO OS 4 ITENS*/
+.divona2{
+padding-top: 150px;
+}
+
+.item {
+    text-align: center;
+    background: rgb(203, 250, 213);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+}
+
+.item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/*monte o seu */
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin-left: 50px;
+}
+
+.divona{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*CARDAPIO*/
+.menu{
+    display: flex;
+    padding-top: 10px;
+}
+
+.combos {
+    margin-left: 95px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+}
+
+
+.descricao1 {
+    margin-left: 300px;
+    gap: 30px;
+    display: flex;
+}
+
+.informacao{
+    text-align: center;
+}
+
+
+
+/*ACAI ZERO AÇÚCAR**/
+.titulo5{
+    text-align: center; /*colocar o texto no centro*/
+    margin-top: 350px; /* colocar margen no topo*/
+}
+
+.divona3{
+    width: 100%;
+}
+
+.combofit{
+    margin-top: 50px; /* colocar margen no topo*/
+    display: flex;
+    gap: 5px; /*espaçamento entre as imagens*/
+}
+
+.imgfit{
+    text-align: center; /* colocar o texto no centro*/
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif #000000; /*mudar a fonte*/
+}
+
+
+.imgfit img{
+    margin-left: 25px; /*indica colocar margin dando uns espaçamento*/
+    gap: 5px; /*espaçamento*/
+    flex-direction: column; /*ajuda a definir a direção dos itens*/
+    width: 300px; /*largura */
+    height: 300px; /*altura*/
+
+}
+
+.imgfit p {
+    margin-top: 10px; /* colocar margen no topo*/
+    font-weight: normal;
+}
+
+
+/*formulário da reserva*/
+.reservas3 {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+section {
+    background-color: rgba(39, 224, 39, 0.518);
     display: flex;
     padding: 10px;
     width: 450px;
@@ -91,14 +236,68 @@ section{
 
 
 /*MAPS*/
-.map-container{
+.map-container {
     text-align: center;
-    margin: 15px;
+    margin: 20px;
 }
 
 /*ICONES*/
-.icons{
+.icons {
     width: 35px;
     height: 35px;
 }
 
+.botoes-contato a img{
+    height: 65px;
+    width: 65px;
+}
+
+
+/*reservas*/
+.container {
+    background-color: rgba(164, 230, 175, 0.986);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    width: 970px;
+    max-width: 800px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #201f1f;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgb(121, 174, 108);
+    color: rgb(15, 15, 15);
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,74 +9,51 @@
 
 </head>
 
-    <body>
-        <header>
-            <div>
-                <img src="../imagens/logo.webp.png" alt="logo" class="logo" />
-            </div>
-    
-            <div class="titulo">
-                <h1>VIVA AÇAI</h1>
-            </div>
-    
-            <nav>
-                <ul>
-                    <li><a href="pagina_inicial.html"><strong>PÁGINA INICIAL</strong></a></li>
-                    <li><a href="cardapio.html"><strong>CARDÁPIO</strong></a></li>
-                    <li><a href="reservas.html"><strong>RESERVAS</strong></a></li>
-                    <li><a href="contato.html"><strong>CONTATO</strong></a></li>
-                </ul>
-            </nav>
-        </header><br>
-        
-    
-        <div class="reservas">
-            <h1><b>RESERVAS</b></h1>
-        </div>
-        <hr><br>
-        <div class="reservas3"> 
-            <section>        
-            
-                <form id="myForm" action="#" method="post"> 
-                    <!-- Campo para Nome -->
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
-    
-                    <!-- Campo para  Numero Mesa -->
-                    <label for="numero_da_mesa">Número da Mesa:</label>
-                    <input type="text" id="numero_da_mesa" name="numero_da_mesa" placeholder="Digite sua mesa" required><br><br>
-    
-                    <!-- Campo para Quantidade de pessoas -->
-                    <label for="numero_de_pessoas">Número de Pessoas:</label>
-                    <input type="tel" id="numero_de_pessoas" name="numero_de_pessoas" placeholder="Digite a quantidade de pessoas" required><br><br>
+<body>
 
-                     <!-- Campo para data e hora -->
-                     <label for="datetime-local">Data e hora:</label>
-                     <input type="datetime-local" id="numero_de_pessoas" name="datetime-local" placeholder="Digite o horário e a data" required><br><br>
- 
 
-                    <!-- Botão de Submissão -->
-                    <input type="submit" value="Enviar" >
-                </form>
-            </section>
-        </div> 
-
-        <div class="informacao">
-            <p><b>INFORMAÇÕES DO VIVA AÇAI:</b></p>
-        </div>
-    
-        <div class="informacoes">
-            <p><img class="icons" src="../imagens/instagram.png" alt="" class="icones">VIVA AÇAI</p><br>
-            <p><img class="icons" src="../imagens/relogio.png" alt="" class="icones">Aberto de Quinta, Sexta, Sábado a partir das 19:30 as 00:00 </p>
-            <p><img class="icons" src="../imagens/phone-call.png" alt="" class="icones">(18)99779-3701</p><br>
-            <p><img class="icons" src="../imagens/localizacao.png" alt="" class="icones">R. José Santana - JD Toquemburgo, Salmourão - SP, 17720-000</p>
+    <header>
+        <div>
+            <img src="../imagens/logo.webp.png" alt="logo" class="logo" />
         </div>
 
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.083122776776!2d-50.86559412472684!3d-21.62168438018017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94969bbdd3039461%3A0x8a87cd56ce13335c!2sLarica%20Food!5e0!3m2!1spt-BR!2sbr!4v1738672819106!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="titulo">
+            <h1>VIVA AÇAI</h1>
         </div>
 
+        <nav>
+            <ul>
+                <li><a href="index.html"><strong>PÁGINA INICIAL</strong></a></li>
+                <li><a href="cardapio.html"><strong>CARDÁPIO</strong></a></li>
+                <li><a href="reservas.html"><strong>RESERVAS</strong></a></li>
+                <li><a href="contato.html"><strong>CONTATO</strong></a></li>
+            </ul>
+        </nav>
+    </header><br>
+
+
+    <main>
+
+        <div class="container">
+            <form action="#" method="POST">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                <label for="data">Data da Reserva:</label>
+                <input type="date" id="data" name="data" required>
+                <label for="horario">Horário:</label>
+                <input type="time" id="horario" name="horario" required>
+                <label for="mensagem">Observações:</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                <button type="submit">Reservar</button>
+            </form>
+        </div>
+    </main>
 
 
 </body>
+
 </html>
